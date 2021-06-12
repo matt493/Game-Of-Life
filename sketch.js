@@ -53,7 +53,7 @@ function initStartParams()
 		for (let y = 0; y < BOARD_HEIGHT * GRID_SIZE; y += GRID_SIZE)
 		{
 			var cell = new Board(x,y);
-			if(random([0,1,2,3,4,5,6,7,8,9]) == 0) cell.alive = true;	// init with random state
+			if(random([0,1,2,3,4,5,6,7,8]) == 0) cell.alive = true;	// init with random state
 			row.push(cell);
 		}
 		board.push(row);
